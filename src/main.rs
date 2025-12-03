@@ -1,10 +1,11 @@
-fn plus_one(x: i32) -> i32 {
-    x + 1
+fn main() {
+    let first = String::from("Ferris");
+    let full = add_suffix(first);
+    println!("{full}");
 }
 
-fn main() {
-    let n = 5;
-    let y = plus_one(n);
-    println!("The value of y is: {y}")
+fn add_suffix(mut name: String) -> String {
+    name.push_str(" Jr.");
+    name
 }
 
